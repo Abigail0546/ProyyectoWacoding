@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ESCUELA MEXICANA</title>
+    
+    <!-- Cargar archivo CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pagina/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEElEQVR4nO2aTWxVRRTHf62VPlIivge1usBYFkYD0ULcuJWoVFIp7lB0YVDcFLSQ6EZo2FnZiGnC0rhwyaKIiEYE/Ij4ARoTsJSyQYhBLHFh+eaZE/+TnFzuu+/e19t3G8M/meTeO2fOnJk558yZMxdu4/+LCtAPvAvsBX4DJoErKvZ8QnVGsxooM0tQAl4EPgNuANWM5TqwH1gHtBcxgLnAZuCcE+oycAB4WyvzsGb8TpWyvlndVuBLtQntzwKDmpymYBUw4QT4AVgPzG+A193AK8CPjt8poJcZhM3ULtfhT8BTOfJfCRxz/EdmYnXuleDWwT/AAHBH3p3wH89NwJRb7a68mHdruavyOkuZeTwCjKnPcckwLXQ6ht8DC2keysDX6ntCWtEQSk6dvgU6aD46gO+cmjVkM7ucOtlmVxQWOK0wB5DZxQbDboZNpLGZKclk3i31Zhf2CfNOswWvO+NPpWJb3D4xHRc7TxNxUmVA3xpFG/CzZLNBJaJdoYIRP9lgh+ZdhoC/YmKrv4H3gPsb5P2M+JyrtyrrnIfIiseAj4CrTvDDwBqVw+77VdFamyxocZ70+STCz0VksVMatAJ9rl1VUfAe4PEY+mXAh5HBWpz1klQnDTao3b5aBBWF1ZdTBIBB/8OOb+Ui8A6wKIUwi0R7MRIsDqSwo7LON9dqyblGDL/IqP/m4d5UJJsVJvSr2quy2NEh0Zo23IIdqrTzRBb9N/WaLloz2tGQaIbjmO1V5bMN6n9eWJbCjoL2jMYxOKlKO8XhArag/8Mx+m/vazVDHwAHtWGd1hl90vEI76fV10G1GRKPON5RO/pKdUv0bnmBW3BBlRbbGL5xDLbK9QU8pGPtzQbO6bWK8Tog3gEtUvVAYzKhKNze/4wbyBVVznGhyogT1pIE96lu3J3TLfGwHXgZeAJ4UOeHciRLEt67RbNCbbaLRzi/22oFx/KpG+SIZAobd+i/7kAC+tyMnI+830V+MF6Bb5/68n16JA4kqloeURUIz3mjGunDa4FHompFjT2ug8FICmeu1MkCzffl0X7V3nJexn1TZVLfJkSzR222iIfxCnytjzcidumRaOwfq3J1wkAMj7r3Szkau+dlfSQh0f3ucB4qaSBE9hVL4exU9sMmoQdYrPN+WbPaoudO1fWIdpPaHotkKushcUPsV6VlAKOIdnC8xkCMx3IJ2yXhW1XK+rZYNP01BnK87jDqhChlFzT6uGmFG4g9I2F2O0+XRzFeu8U7CRUXNNb0mvvF1NKYAT7CtWcPY/S08sA7pbO/yKD/kIHfUJnUtwnRjKrNZvFI68pfkyyfJBG94GKbqDfzm1VRaAGOShYLa2qi5I66NkuGt9xA7LlIrJIcZ9JcQwyK+KiSDx1qeKagJF1Am1TSZNtICpScXZhXQR7GSpEYlExjWS6FetVoSsmxotHjNszMVxkjbgbi4q9modNF2+blMqOktFBVieQi7GMecEQyHJnOPWOnArNwrWDvzULFHe5O5XHh0+2WdixFQJeXTYy7veuBvBh3OTWbUu41bUItC9rknS45dbon705KzgFUlVDuzXHHts0u7BPBsGf07n2lW/aqcrEbGvyLoaLYKYQdValSnrfFdVfH1Ov3SPRq4fU2HXyWyG3PUVmgS6PnRHMoEj1b5LCxqD8g2pUV36cjQNbQ/ZoSg2uLGkAc5uugM6zz+AklNMJPNRd0aBoVTV/OWZjbYDbhXxK1LJe5B/MJAAAAAElFTkSuQmCC" alt="education">
+            <h1>Escuela Mexicana</h1>
+            
+            <nav class="navbar">
+                <a href="{% url 'situacion' %}">Situación</a>
+                <a href="{% url 'causas' %}">Causas</a>
+                <a href="{% url 'propuesta' %}">Propuesta</a>
+                <a href="{% url 'vision' %}">Visión</a>
+            </nav>
+            <!--ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>-->
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>¡Bienvenido!</h2>
+            
+            <p>Este sitio presenta un modelo educativo para transformar la educación básica en México. 
+Explora las secciones para conocer la situación actual, causas, propuestas de innovación, 
+casos de éxito y visión de futuro.</p>
+            <!--<button id="miBoton" class="btn-primary">Haz clic aquí</button>-->
+        </section>
+
+        <section class="content">
+            <div class="card">
+                <h3>Matemáticas</h3>
+                <p>Descripción de la primera característica.</p>
+            </div>
+            <div class="card">
+                <h3>Español</h3>
+                <p>Descripción de la segunda característica.</p>
+            </div>
+            <div class="card">
+                <h3>Ciencias Naturales</h3>
+                <p>Descripción de la tercera característica.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Django. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Cargar archivo JavaScript -->
+    <script src="{% static 'pagina/js/script.js' %}"></script>
+</body>
+</html>
