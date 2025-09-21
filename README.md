@@ -4,7 +4,7 @@
 
 Objetivo: 
 El objetivo del proyecto Web Education es desarrollar una página web educativa que presente un modelo pedagógico dividido en secciones clave: Situación, Causas, Propuesta y Visión, con un diseño moderno y fácil de extender.
-✅ Reducción del abandono escolar.
+✅ Reducción del abandono escolar./n
 📖 Mejora del 20-30% en competencias básicas en 3 años.
 💻 Inclusión digital en zonas marginadas.
 🔗 Cierre progresivo de la brecha digital.
